@@ -193,7 +193,7 @@ export default class Carousel {
     // each snap needs some a11y love
     this.elements.snaps.forEach((snapChild, index) => {
       this.hasIntersected.add({
-        isIntersecting: index === 0,
+        isIntersecting: index === startIndex,
         target: snapChild,
       })
       
@@ -210,17 +210,14 @@ export default class Carousel {
       const itemIndex = this.elements.root.getAttribute('carousel-start')
       const startElement = this.elements.snaps[itemIndex - 1]
 
-      this.elements.snaps.forEach(snap =>
-        snap.style.scrollSnapAlign = 'unset')
+      requestAnimationFrame(() => {
+        const scrollPos = startElement.offsetLeft
 
-      startElement.style.scrollSnapAlign = null
-      startElement.style.animation = 'carousel-scrollstart 1ms'
-
-      startElement.addEventListener('animationend', e => {
-        startElement.animation = null
-        this.elements.snaps.forEach(snap =>
-          snap.style.scrollSnapAlign = null)
-      }, {once: true})
+        this.elements.scroller.scrollTo({
+          left: scrollPos,
+          behavior: 'instant',
+        })
+      })
     }
   }
 
@@ -291,6 +288,7 @@ export default class Carousel {
   #createPagination() {
     let nav = document.createElement('nav')
     nav.className = 'gui-carousel--pagination'
+    nav.setAttribute('role', 'tablist')
     this.elements.root.appendChild(nav)
     
     this.elements.pagination = nav
@@ -317,7 +315,6 @@ export default class Carousel {
     marker.setAttribute('aria-label', img?.alt || caption?.innerText)
     marker.setAttribute('aria-setsize', this.elements.snaps.length)
     marker.setAttribute('aria-posinset', index)
-    marker.setAttribute('aria-controls', `carousel-item-${index}`)
     return marker
   }
 
@@ -332,7 +329,6 @@ export default class Carousel {
     marker.setAttribute('aria-label', img.alt)
     marker.setAttribute('aria-setsize', this.elements.snaps.length)
     marker.setAttribute('aria-posinset', index)
-    marker.setAttribute('aria-controls', `carousel-item-${index}`)
     return marker
   }
 
@@ -358,7 +354,6 @@ export default class Carousel {
     control.type = 'button'
     control.title = userFacingText
     control.className = `gui-carousel--control --${btnType}`
-    control.setAttribute('aria-controls', 'gui-carousel--controls')
     control.setAttribute('aria-label', userFacingText)
 
     let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')

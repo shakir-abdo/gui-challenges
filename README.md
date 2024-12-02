@@ -85,11 +85,57 @@ and expand the diversity of our skills.**
   [`Article`](https://web.dev/building-a-button-component/)
 20. FABs
   [`Demo`](https://gui-challenges.web.app/FAB/dist/) 
-  [`YouTube`](https://www.youtube.com/watch?v=RXopH5t2Kww&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ) 
+  [`YouTube`](https://www.youtube.com/watch?v=RXopH5t2Kww) 
+  [`Article`](https://web.dev/building-a-fab-component/)
 21. Carousels
   [`Demo`](https://gui-challenges.web.app/carousel/dist/) 
-  [`YouTube`](https://www.youtube.com/watch?v=CXJv6zM003M)
+  [`YouTube`](https://www.youtube.com/watch?v=CXJv6zM003M) 
 22. Crooked Grid Illusion
   [`Demo`](https://gui-challenges.web.app/crooked-illusion/dist/) 
   [`YouTube`](https://www.youtube.com/watch?v=71jpjr7syc4) 
   [`Article`](https://web.dev/building-a-crooked-grid-illusion/)
+23. Tooltips
+  [`Demo`](https://gui-challenges.web.app/tooltips/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=Y5EIC_UyPME) 
+  [`Article`](https://web.dev/building-a-tooltip-component/)
+24. Transitions
+  [`Demo`](https://gui-challenges.web.app/transitions/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=jjtiIIjEsTw) 
+25. Card Stack
+  [`Demo`](https://gui-challenges.web.app/card-stack/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=m4DKhRJeYx4) 
+26. Spring Physics
+  [`Demo`](https://gui-challenges.web.app/spring-physics/dist/) 
+  [`YouTube`](https://youtu.be/eamAHF71ZN4)
+27. Glitch
+  [`Demo`](https://gui-challenges.web.app/glitch/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=MR7dClW6iBg)
+28. Switch Group
+  [`Demo`](https://gui-challenges.web.app/switch-group/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=l7kmBCRqfLw)
+29. SciFi Scroll Text
+  [`Demo`](https://gui-challenges.web.app/scifi-scroll/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=JeI_TsADXQA)
+30. okLCH Color Palettes
+  [`Demo`](https://gui-challenges.web.app/color-palettes/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=6aCsAMgwnjE)
+31. Morphing Button
+  [`Demo`](https://gui-challenges.web.app/morphing-button/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=N2BKAKwGP6M)
+32. Adaptive Typography
+  [`Demo`](https://gui-challenges.web.app/adaptive-typography/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=8B7xOgp5Aow) 
+  [`Article`](https://web.dev/articles/adapting-typography-to-user-preferences-with-css)
+33. Relative Colors
+  [`Demo`](https://gui-challenges.web.app/relative-colors/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=1z_ViBjdnSw)
+  [`Article`](https://developer.chrome.com/blog/css-relative-color-syntax/)
+34. Halloween Projection
+  [`Demo`](https://gui-challenges.web.app/halloween-projection/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=3OlHDnPvKKg)
+34. Picklists
+  [`Demo`](https://gui-challenges.web.app/picklists/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=d2O-8n-UnrI)
+35. Compare
+  [`Demo`](https://gui-challenges.web.app/compare/dist/) 
+  [`YouTube`](https://www.youtube.com/watch?v=hCbSRNE4WUI)

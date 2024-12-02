@@ -76,6 +76,48 @@ jobs:
 
     - name: Build Crooked Grid
       run: cd crooked-illusion && npm install && npm run build
+
+    - name: Build Tooltips
+      run: cd tooltips && npm install && npm run build
+
+    - name: Build Transitions
+      run: cd transitions && npm install && npm run build
+
+    - name: Build Card Stack
+      run: cd card-stack && npm install && npm run build
+
+    - name: Build Spring Physics
+      run: cd spring-physics && npm install && npm run build
+
+    - name: Build Glitch
+      run: cd glitch && npm install && npm run build
+
+    - name: Build Switch Group
+      run: cd switch-group && npm install && npm run build
+
+    - name: Build Sci-Fi Scroll
+      run: cd scifi-scroll && npm install && npm run build
+
+    - name: Build okLCH Palettes
+      run: cd color-palettes && npm install && npm run build
+
+    - name: Morphing Button
+      run: cd morphing-button && npm install && npm run build
+
+    - name: Adaptive Typography
+      run: cd adaptive-typography && npm install && npm run build
+
+    - name: Relative Colors
+      run: cd relative-colors && npm install && npm run build
+
+    - name: Halloween Projection
+      run: cd halloween-projection && npm install && npm run build
+
+    - name: Picklists
+      run: cd picklists && npm install && npm run build
+
+    - name: Compare
+      run: cd compare && npm install && npm run build
       
     - name: Deploy to Firebase
       uses: w9jds/firebase-action@master
